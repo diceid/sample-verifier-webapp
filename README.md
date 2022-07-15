@@ -11,7 +11,7 @@ Holder should have Identity Wallet application, DIWallet installed on their mobi
 <br>On Android, the link is:  DIWallet - Apps on Google Play
 
 The flow of Verifiable credential between these different parties is:
-![Flow between different parties](diagrams/ver_flow.jpg)
+![Flow between different parties](diagrams/flow_vc_auth.jpg)
 
 
 
