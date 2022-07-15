@@ -1,9 +1,9 @@
 # sample-verifier-webapp
 
 The sample web application demonstrates the functionality of Verification Controller. Different components required for this demo are:<br> 
--Wipro’s Verification controller <br>
--Identity Wallet for Holder and <br>
--Verifiable Sample Web Application <br>
+- Wipro’s Verification controller <br>
+- Identity Wallet for Holder and <br>
+- Verifiable Sample Web Application <br>
 
 Verification controller is hosted by us at https://vcauth.azurefd.net <br>
 Holder should have Identity Wallet application, DIWallet installed on their mobile phone. The wallet is available on both Android and iOS platforms. 
