@@ -11,3 +11,21 @@ Holder should have Identity Wallet, DIWallet installed on their mobile phone. Th
 
 The flow of Verifiable credential between these different parties is:
 
+
+
+
+
+
+Different steps user needs to go through to setup Verifiable credential with Wipro’s Platform are:
+1.	Configure Presentation request parameters with Verifier Controller:
+PUT/POST https://vcauth.azurefd.net/api/vc-config: This API can be used to configure the presentation request parameters. Holder will present proof in terms of these parameters.
+The id of this configuration need to be passed in the sample application
+ be passed to  authorize?pres_req_conf_id=idname 
+2.	Donwload sample verifier application and make the following changes:
+a.	Sample-verifier-webapp/src/vc_services/VC_AuthService.js
+i.	Constants.clientRoot -> should point to the URL where sample verifier application is hosted. This URL should be accessible from Verifier controller
+ii.	userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id wipro-access can be used.
+3.	Install and build the application with the following commands:
+a.	npm install
+b.	npm run build
+c.	npm start
