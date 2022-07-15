@@ -1,6 +1,6 @@
 # sample-verifier-webapp
 
-The sample web application demonstrates the functionality of Verification Controller. Different components required for this demo are: 
+The sample web application demonstrates the functionality of Verification Controller. Different components required for this demo are:<br> 
 •	Wipro’s Verification controller
 •	Identity Wallet for Holder and
 •	Verifiable Sample Web Application 
