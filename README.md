@@ -24,10 +24,10 @@ PUT/POST https://vcauth.azurefd.net/api/vc-config: This API can be used to confi
 The id of this configuration need to be passed in the sample application
  be passed to  authorize?pres_req_conf_id=idname 
 2.	Donwload sample verifier application and make the following changes:<br>
-   -Sample-verifier-webapp/src/vc_services/VC_AuthService.js <br>
-      -Constants.clientRoot -> should point to the URL where sample verifier application is hosted. This URL should be accessible from Verifier controller <br>
-      -userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id wipro-access can be used.<br>
+   - Sample-verifier-webapp/src/vc_services/VC_AuthService.js <br>
+      - Constants.clientRoot -> should point to the URL where sample verifier application is hosted. This URL should be accessible from Verifier controller <br>
+      - userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id wipro-access can be used.<br>
 3.	Install and build the application with the following commands:<br>
- -npm install <br>
- -npm run build <br>
- -npm start <br>
+ - npm install <br>
+ - npm run build <br>
+ - npm start <br>
