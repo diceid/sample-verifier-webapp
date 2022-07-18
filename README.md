@@ -1,4 +1,4 @@
-# Sample Verifier Web application
+# Sample Verifier Web application for DICE
 
 The sample web application demonstrates the functionality of Verification Controller. Different components required for this demo are:<br> 
 - DICE Verification component <br>
@@ -30,5 +30,5 @@ PUT/POST https://futurebankvcauthcontroller.wiprobc.com/api/vc-config: This API 
    - Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
       - Constants.clientRoot -> should point to the URL where sample verifier application is hosted. This URL should be accessible from Verifier controller 
       - userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id demo-access can be used.
-3.	Install and build the application with the following commands:
+3.	Install and build the application as mentioned before
 
