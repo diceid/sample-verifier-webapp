@@ -14,9 +14,9 @@ Identity Wallet application for Holder, DICE Wallet need to be installed on the 
 Verifiable Sample web application can be downloaded from here. Once you download the code, follow the steps below to install the code:
 1. change inside the directory sample-verififier webapp
 2. build and Install webapp 
-  - npm install <br>
-  - npm run build <br>
-  - npm start <br>
+    - npm install 
+    - npm run build 
+    - npm start 
   
 The flow of Verifiable credential between these different parties is:<br>
 
