@@ -3,12 +3,15 @@
 The sample web application demonstrates the functionality of Verification Controller. Different components required for this demo are:<br> 
 - DICE Verification component <br>
 - Identity Wallet for Holder and <br>
-- Verifiable Sample Web Application <br>
+- Verifiable Sample Web Application  (sample-verifier-webapp) <br>
 
-Holder should have Identity Wallet application, DIWallet installed on their mobile phone. The wallet is available on both Android and iOS platforms. 
-<br>On iOS, it be can downloaded from: [DICE ID - Apple playstore](https://apps.apple.com/in/app/dice-id/id1624858853)
-<br>On Android, the link is: [DICE ID - Apps on Google Play](https://play.google.com/store/apps/details?id=com.diwallet1)
+DICE verification component is hosted at: https://futurebankvcauthcontroller.wiprobc.com
 
+Identity Wallet application for Holder, DICE Wallet need to be installed on the mobile phone. The wallet is available on both Android and iOS platforms. 
+ - On iOS, it be can downloaded from: [DICE ID - Apple playstore](https://apps.apple.com/in/app/dice-id/id1624858853)
+ - On Android, the link is: [DICE ID - Apps on Google Play](https://play.google.com/store/apps/details?id=com.diwallet1)
+
+Verifiable Sample web application can be downloaded from here.  
 The flow of Verifiable credential between these different parties is:<br>
 
 ![Flow between different parties](diagrams/flow_vc_auth.jpg)
