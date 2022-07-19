@@ -29,7 +29,12 @@ Once code is downloaded, follow the steps below to install and build the code:
  
 By default this will start the server on localhost:3000. Make sure that this url is mapped to public ip so that DICE Veirifier platform can access this and is able to return the result of verification back to the sample verifier webapp.
 
-After the server has started with npm start, connect to http://localhost:3000 from your browser
+One has to go through the following steps for verifying the credentials obtained with DICE issuer platform:
+ - After the server has started with npm start, connect to http://localhost:3000 from your browser
+ - click on "Veirfy Credentials" 
+ - QR code is displayed on the screen, scan this with your DICE Identity Wallet on mobile phone
+ - Present the requested presentation attributes
+ - Once credential is presented, DICE verifier Platform verifies the credential and result of verifucation is sent back the the sample verifier webapp as callback
   
 ## Flow Diagram  
 The flow of Verifiable credential between these different parties is:<br>
