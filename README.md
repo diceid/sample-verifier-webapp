@@ -5,7 +5,8 @@ The sample verifier web application demonstrates the functionality of DICE Verif
 ## Prerequisites
 Different components required for this demo are: 
 - DICE Verification component 
-- DICE Identity Wallet for Holder and 
+- DICE Identity Wallet for Holder
+- Credentials from sample-issuer-webapp  
 - Verifiable Sample Web Application  (sample-verifier-webapp) 
 
 DICE verification component is hosted at: https://futurebankvcauthcontroller.wiprobc.com
@@ -13,6 +14,8 @@ DICE verification component is hosted at: https://futurebankvcauthcontroller.wip
 DICE Identity Wallet need to be installed on the mobile phone. The wallet is available on both Android and iOS platforms. 
  - On iOS, it be can downloaded from: [DICE ID - Apple playstore](https://apps.apple.com/in/app/dice-id/id1624858853)
  - On Android, the link is: [DICE ID - Apps on Google Play](https://play.google.com/store/apps/details?id=com.diwallet1)
+
+To get credentials from sample issuer webapp, please refer to https://github.com/diceid/sample-issuer-webapp/blob/main/README.md
 
 Sample verifier web application can be downloaded from here. 
 
@@ -23,12 +26,17 @@ Once code is downloaded, follow the steps below to install and build the code:
     - npm install 
     - npm run build 
     - npm start 
+ 
+By default this will start the server on localhost:3000. Make sure that this url is mapped to public ip so that DICE Veirifier platform can access this and is able to return the result of verification back to the sample verifier webapp.
+
+After the server has started with npm start, connect to http://localhost:3000 from your browser
   
+## Flow Diagram  
 The flow of Verifiable credential between these different parties is:<br>
 
 ![Flow between different parties](diagrams/flow_vc_auth.jpg)
 
-
+## Customization 
 Different steps user needs to go through to setup Verifiable credential are: <br>
 1.	Configure Presentation request parameters with Verifier Controller:
 PUT/POST https://futurebankvcauthcontroller.wiprobc.com/api/vc-config: This API can be used to configure the presentation request parameters. Holder will present proof in terms of these parameters. The id of this configuration need to be passed in the sample application
