@@ -1,9 +1,12 @@
 # Sample Verifier Web application for DICE
 
-The sample web application demonstrates the functionality of Verification Controller. Different components required for this demo are:<br> 
-- DICE Verification component <br>
-- Identity Wallet for Holder and <br>
-- Verifiable Sample Web Application  (sample-verifier-webapp) <br>
+The sample verifier web application demonstrates the functionality of DICE Verification Controller. 
+
+## Prerequisites
+Different components required for this demo are: 
+- DICE Verification component 
+- Identity Wallet for Holder and 
+- Verifiable Sample Web Application  (sample-verifier-webapp) 
 
 DICE verification component is hosted at: https://futurebankvcauthcontroller.wiprobc.com
 
