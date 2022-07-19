@@ -5,16 +5,19 @@ The sample verifier web application demonstrates the functionality of DICE Verif
 ## Prerequisites
 Different components required for this demo are: 
 - DICE Verification component 
-- Identity Wallet for Holder and 
+- DICE Identity Wallet for Holder and 
 - Verifiable Sample Web Application  (sample-verifier-webapp) 
 
 DICE verification component is hosted at: https://futurebankvcauthcontroller.wiprobc.com
 
-Identity Wallet application for Holder, DICE Wallet need to be installed on the mobile phone. The wallet is available on both Android and iOS platforms. 
+DICE Identity Wallet need to be installed on the mobile phone. The wallet is available on both Android and iOS platforms. 
  - On iOS, it be can downloaded from: [DICE ID - Apple playstore](https://apps.apple.com/in/app/dice-id/id1624858853)
  - On Android, the link is: [DICE ID - Apps on Google Play](https://play.google.com/store/apps/details?id=com.diwallet1)
 
-Verifiable Sample web application can be downloaded from here. Once you download the code, follow the steps below to install the code:
+Sample verifier web application can be downloaded from here. 
+
+## How to run
+Once code is downloaded, follow the steps below to install and build the code:
 1. change inside the directory sample-verififier webapp
 2. build and Install webapp 
     - npm install 
