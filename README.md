@@ -29,6 +29,9 @@ Once code is downloaded, follow the steps below to install and build the code:
  
 By default this will start the server on localhost:3000. Make sure that this url is mapped to public ip so that DICE Veirifier platform can access this and is able to return the result of verification back to the sample verifier webapp.
 
+Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
+      - Constants.clientRoot -> should point to the URL where sample verifier application is hosted. This URL should be accessible from Verifier controller 
+
 One has to go through the following steps for verifying the credentials obtained with DICE issuer platform:
  - After the server has started with npm start, connect to http://localhost:3000 from your browser
  - click on "Veirfy Credentials" 
@@ -42,12 +45,13 @@ The flow of Verifiable credential between these different parties is:<br>
 ![Flow between different parties](diagrams/flow_vc_auth.jpg)
 
 ## Customization 
-Different steps user needs to go through to setup Verifiable credential are: <br>
-1.	Configure Presentation request parameters with Verifier Controller:
-PUT/POST https://futurebankvcauthcontroller.wiprobc.com/api/vc-config: This API can be used to configure the presentation request parameters. Holder will present proof in terms of these parameters. The id of this configuration need to be passed in the sample application
-2.	Donwload sample verifier application and make the following changes:
-   - Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
-      - Constants.clientRoot -> should point to the URL where sample verifier application is hosted. This URL should be accessible from Verifier controller 
+One can use the default Schema hardcoded in sample issuer webapp and the corresponding default presentation request. But if different presentation request is required, then the follwoing steps needs to be followed:
+
+1.	Configure Presentation request parameters with DICE Verification Controller:
+https://futurebankvcauthcontroller.wiprobc.com/  POST api/vc-config. This API can be used to configure the presentation request parameters. Holder will present proof in terms of these parameters. The id of this configuration need to be passed in the sample application
+2.	Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
       - userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id demo-access can be used.
 3.	Install and build the application as mentioned before
+
+Note: Make sure that you have credentials corresponding to this presentation request in your DICE Wallet. If you create new presentation request, create the schema with same attributes as presentation request and issue credentials to you with DICE issuer platofrm from sample issuer application.
 
