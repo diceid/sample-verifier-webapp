@@ -34,7 +34,7 @@ One has to go through the following steps for verifying the credentials obtained
  - click on "Veirfy Credentials" 
  - QR code is displayed on the screen, scan this with your DICE Identity Wallet on mobile phone
  - Present the requested presentation attributes
- - Once credential is presented, DICE verifier Platform verifies the credential and result of verifucation is sent back the the sample verifier webapp as callback
+ - Once credential is presented, DICE verifier Platform verifies the credential and result of verification is sent back the the sample verifier webapp as callback
   
 ## Flow Diagram  
 The flow of Verifiable credential between these different parties is:<br>
