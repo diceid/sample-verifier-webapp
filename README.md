@@ -50,7 +50,7 @@ One can use the default Schema hardcoded in sample issuer webapp and the corresp
 1.	Configure Presentation request parameters with DICE Verification Controller:
 https://futurebankvcauthcontroller.wiprobc.com/  POST api/vc-config. This API can be used to configure the presentation request parameters. Holder will present proof in terms of these parameters. The id of this configuration need to be passed in the sample application
 2.	Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
-      - userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id demo-access can be used.
+      - userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id verified-email can be used.
 3.	Install and build the application as mentioned before
 
 Note: Make sure that you have credentials corresponding to this presentation request in your DICE Wallet. If you create new presentation request, create the schema with same attributes as presentation request and issue credentials to you with DICE issuer platofrm from sample issuer application.
