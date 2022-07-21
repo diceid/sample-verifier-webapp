@@ -2,7 +2,7 @@
 
 The sample verifier web application demonstrates the functionality of DICE Verification Controller. 
 
-## Prerequisites
+## Pre-requisites
 Different components required for this demo are: 
 - DICE Verification component 
 - DICE Identity Wallet for Holder
