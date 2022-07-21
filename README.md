@@ -63,8 +63,7 @@ https://futurebankvcauthcontroller.wiprobc.com/  POST api/vc-config. This API ca
             "Name",
             "Age",
             "PAN",
-            "PostalAddress",
-            "Credential_Valid_Till"
+            "PostalAddress"
           ],
           "label": null,
           "restrictions": [
