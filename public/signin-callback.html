@@ -7,7 +7,7 @@
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
 
-    <h1>Verifying credentials....</h1>
+    <h1>credentials Presented</h1>
 
     <script src="oidc-client.min.js"></script>
     <script>
@@ -18,9 +18,9 @@
         loadUserInfo: false,
       });
       this.userManager.settings.metadata = {
-        issuer: "https://vcauth.azurefd.net",
+        issuer: "https://futurebankvcauthcontroller.diceid.com/",
         token_endpoint:
-          "https://vcauth.azurefd.net/vc/connect/token",
+          "https://futurebankvcauthcontroller.diceid.com/vc/connect/token",
       };
       userManager
         .signinRedirectCallback()

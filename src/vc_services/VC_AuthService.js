@@ -4,9 +4,9 @@ import { Log, User, UserManager } from "oidc-client";
 
 //Verifiable credentials start
 let Constants = {
-  stsAuthority: "https://futurebankvcauthcontroller.wiprobc.com/",
+  stsAuthority: "https://futurebankvcauthcontroller.diceid.com/",
   clientId: "django-oidc-demo",
-  clientRoot: "https://xcomm.wiprobc.com/",
+  clientRoot: "http://172.31.12.33:3000/",
   clientScope: "openid profile vc_authn",
   apiRoot: "https://demo.identityserver.io/api/",
 };
@@ -27,18 +27,17 @@ var userManager = new UserManager(settings);
 userManager.settings.metadata = {
   issuer: "https://futurebankvcauthcontroller.wiprobc.com/",
  jwks_uri:
-    "https://futurebankvcauthcontroller.wiprobc.com/.well-known/openid-configuration/jwks",
+    "https://futurebankvcauthcontroller.diceid.com/.well-known/openid-configuration/jwks",
   authorization_endpoint:
-    "https://futurebankvcauthcontroller.wiprobc.com/vc/connect/authorize?pres_req_conf_id=verified-email",
+    "https://futurebankvcauthcontroller.diceid.com/vc/connect/authorize?pres_req_conf_id=verified-email",
   token_endpoint:
-    "https://futurebankvcauthcontroller.wiprobc.com/vc/connect/token",
+    "https://futurebankvcauthcontroller.diceid.com/vc/connect/token",
   userinfo_endpoint:
-    "https://futurebankvcauthcontroller.wiprobc.com/connect/userinfo",
-  //end_session_endpoint: "https://vcauth.azurefd.net/vc/connect/endsession",
+    "https://futurebankvcauthcontroller.diceid.com/connect/userinfo",
   check_session_iframe:
-    "https://futurebankvcauthcontroller.wiprobc.com/vc/connect/checksession",
+    "https://futurebankvcauthcontroller.diceid.com/vc/connect/checksession",
   revocation_endpoint:
-    "https://futurebankvcauthcontroller.wiprobc.com/vc/connect/revocation",
+    "https://futurebankvcauthcontroller.diceid.com/vc/connect/revocation",
 };
 
 Log.logger = console;
