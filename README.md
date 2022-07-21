@@ -68,7 +68,7 @@ https://futurebankvcauthcontroller.wiprobc.com/  POST api/vc-config. This API ca
           ],
           "label": null,
           "restrictions": [
-            
+              "issuer_did": "CEvn5gT3CpmU9kEHCzwdZE"
           ]
         }
       ],
