@@ -6,7 +6,7 @@ import { Log, User, UserManager } from "oidc-client";
 let Constants = {
   stsAuthority: "https://futurebankvcauthcontroller.diceid.com/",
   clientId: "django-oidc-demo",
-  clientRoot: "http://172.31.12.33:3000/",
+  clientRoot: "http://localhost:3000/",
   clientScope: "openid profile vc_authn",
   apiRoot: "https://demo.identityserver.io/api/",
 };
