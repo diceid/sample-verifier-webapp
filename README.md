@@ -27,10 +27,9 @@ Once code is downloaded, follow the steps below to install and build the code:
     - npm run build 
     - npm start 
  
-By default this will start the server on localhost:3000. Make sure that this url is mapped to public ip so that DICE Veirifier platform can access this and is able to return the result of verification back to the sample verifier webapp.
+By default this will start the server on localhost:3000. Make sure that this url is not changes as this has been configured in  DICE Veirifier platform as a redirect URI. The result of verification is sent back to the redirect URI.
 
-Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
-      - Constants.clientRoot -> should point to the URL where sample verifier application is hosted. This URL should be accessible from Verifier controller 
+
 
 One has to go through the following steps for verifying the credentials obtained with DICE issuer platform:
  - After the server has started with npm start, connect to http://localhost:3000 from your browser
@@ -48,7 +47,7 @@ The flow of Verifiable credential between these different parties is:<br>
 One can use the default Schema hardcoded in sample issuer webapp and the corresponding default presentation request. But if different presentation request is required, then the follwoing steps needs to be followed:
 
 1.	Configure Presentation request parameters with DICE Verification Controller:
-https://futurebankvcauthcontroller.wiprobc.com/  POST api/vc-config. This API can be used to configure the presentation request parameters. Holder will present proof in terms of these parameters. The id of this configuration need to be passed in the sample application file: Sample-verifier-webapp/src/vc_services/VC_AuthService.js
+https://futurebankvcauthcontroller.wiprobc.com/  POST api/vc-config. This API can be used to configure the presentation request parameters. Holder will present the proof in terms of these parameters. The id of this configuration need to be passed in the sample application file: Sample-verifier-webapp/src/vc_services/VC_AuthService.js
 2. Example of JSON required to create presentation request:
    -  {
     "id": "demo-access",
@@ -73,12 +72,10 @@ https://futurebankvcauthcontroller.wiprobc.com/  POST api/vc-config. This API ca
       ],
       "requested_predicates": []
     }
-  },
+  }
+3. The Authorization key to access this API is "controller-api-key"
 
-
-
-
-3.	Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
+4.	Sample-verifier-webapp/src/vc_services/VC_AuthService.js 
       - userManager.settings.metadata.authorization_endpoint -> change pres_req_conf_id to the presentation request id you have created. If you haven’t created any new id, then the default id verified-email can be used.
 5.	Install and build the application as mentioned before
 
