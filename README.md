@@ -8,6 +8,8 @@ Different components required for this demo are:
 - DICE Identity Wallet for Holder
 - Credentials from sample issuer application  
 - Verifiable Sample Web Application  (sample-verifier-webapp) 
+- Node version >= 14
+- NPM version >= 6
 
 DICE verification component is hosted at: https://futurebankvcauthcontroller.wiprobc.com
 
@@ -16,6 +18,8 @@ DICE Identity Wallet need to be installed on the mobile phone. The wallet is ava
  - On Android, the link is: [DICE ID - Apps on Google Play](https://play.google.com/store/apps/details?id=com.diwallet1)
 
 To get credentials from sample issuer webapp, please refer to[ https://github.com/diceid/sample-issuer-webapp/blob/main/README.md](https://github.com/diceid/sample-issuer-app/blob/main/README.md)
+
+
 
 Sample verifier web application can be downloaded from here. 
 
