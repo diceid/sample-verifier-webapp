@@ -16,6 +16,9 @@ DICE verification component is hosted at: https://futurebankvcauthcontroller.dic
 DICE Identity Wallet need to be installed on the mobile phone. The wallet is available on both Android and iOS platforms. 
  - On iOS, it be can downloaded from: [DICE ID - Apple playstore](https://apps.apple.com/in/app/dice-id/id1624858853)
  - On Android, the link is: [DICE ID - Apps on Google Play](https://play.google.com/store/apps/details?id=com.diwallet1)
+ 
+ <b> Important </b> --
+After installing the wallet app make sure make sure "DICE ID Test Network" or "Wipro Identity Network" is selected in the Network option of the Settings.
 
 To get credentials from sample issuer webapp, please refer to[ https://github.com/diceid/sample-issuer-webapp/blob/main/README.md](https://github.com/diceid/sample-issuer-app/blob/main/README.md)
 
