@@ -11,14 +11,14 @@ Different components required for this demo are:
 - Node version >= 14
 - NPM version >= 6
 
-DICE verification component is hosted at: https://futurebank-verifier-api.diceid.com
+DICE verification component is hosted at: https://dice-uat-verifier-api.diceid.com
 
 DICE Identity Wallet need to be installed on the mobile phone. The wallet is available on both Android and iOS platforms. 
  - On iOS, it be can downloaded from: [DICE ID - Apple playstore](https://apps.apple.com/in/app/dice-id/id1624858853)
  - On Android, the link is: [DICE ID - Apps on Google Play](https://play.google.com/store/apps/details?id=com.diwallet1)
  
  <b> Important </b> --
-After installing the wallet app make sure make sure "DICE ID Test Network" or "Wipro Identity Network" is selected in the Network option of the Settings.
+After installing the wallet app make sure make sure "DICE ID Test Network" is selected in the Network option of the Settings.
 
 To get credentials from sample issuer webapp, please refer to[ https://github.com/diceid/sample-issuer-webapp/blob/main/README.md](https://github.com/diceid/sample-issuer-app/blob/main/README.md)
 
@@ -34,9 +34,7 @@ Once code is downloaded, follow the steps below to install and build the code:
     - npm run build 
     - npm start 
  
-By default this will start the server on localhost:3000. Make sure that this url is not changes as this has been configured in  DICE Veirifier platform as a redirect URI. The result of verification is sent back to the redirect URI.
-
-
+By default this will start the server on localhost:3000. Make sure that this url is not changed as this has been configured in  DICE Verifier platform as a redirect URI. The result of verification is sent back to the redirect URI.
 
 One has to go through the following steps for verifying the credentials obtained with DICE issuer platform:
  - After the server has started with npm start, connect to http://localhost:3000 from your browser
@@ -54,7 +52,7 @@ The flow of Verifiable credential between these different parties is:<br>
 One can use the default Schema hardcoded in sample issuer webapp and the corresponding default presentation request. But if different presentation request is required, then the follwoing steps needs to be followed:
 
 1.	Configure Presentation request parameters with DICE Verification Controller:
-https://futurebank-verifier-api.diceid.com/  POST api/vc-config. This API can be used to configure the presentation request parameters. Holder will present the proof in terms of these parameters. The id of this configuration need to be passed in the sample application file: Sample-verifier-webapp/src/vc_services/VC_AuthService.js
+https://dice-uat-verifier-api.diceid.com/  POST api/vc-configs. This API can be used to configure the presentation request parameters. Holder will present the proof in terms of these parameters. The id of this configuration need to be passed in the sample application file: Sample-verifier-webapp/src/vc_services/VC_AuthService.js
 2. Example of JSON required to create presentation request:
    -  {
     "id": "demo-access",
